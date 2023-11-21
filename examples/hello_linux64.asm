@@ -1,10 +1,10 @@
-%include "../nasmlib/os/macho64.asm"
+%include "../nasmlib/platforms/linux64.asm"
 
 ; -------------------- Code --------------------
 section .text
-    global  _main
+    global MAIN
 
-_main:
+MAIN:
     write STDOUT, msg, msg.len
     exit 0
 
